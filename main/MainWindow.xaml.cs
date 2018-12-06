@@ -38,7 +38,7 @@ namespace main
                 tvIPTotal.Content = "Total IP addresses = " + String.Format("{0:n0}", ipnetwork.Total);
                 tvNetwork.Content = "Network = " + ipnetwork.Network;
                 tvNetmask.Content = "Netmask = " + ipnetwork.Netmask;
-                tvIPBroadcast.Content = "Boardcast = " + ipnetwork.Broadcast;
+                tvIPBroadcast.Content = "Prefix length = " + (comboSubnet.SelectedIndex + 1);
             }
 
             catch (Exception p)

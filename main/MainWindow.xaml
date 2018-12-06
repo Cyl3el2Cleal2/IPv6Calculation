@@ -26,7 +26,7 @@
             <Label x:Name="tvIPLast" Content="Last =" Canvas.Left="102" Width="411" Canvas.Top="231" FontSize="14"/>
             <Label x:Name="tvNetwork" Content="Network =" Width="490" Canvas.Top="130" Canvas.Left="-508" FontSize="14"/>
             <Label x:Name="tvNetmask" Content="Netmask =" Width="490" Canvas.Top="164" Canvas.Left="-508" FontSize="14"/>
-            <Label x:Name="tvIPBroadcast" Content="Broadcast =" Width="490" Canvas.Top="198" Canvas.Left="-508" FontSize="14"/>
+            <Label x:Name="tvIPBroadcast" Content="Prefix length =" Width="490" Canvas.Top="198" Canvas.Left="-508" FontSize="14"/>
         </Canvas>
         <Label Content="IP v6 Address                " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="270" FontSize="16" HorizontalContentAlignment="Center"/>
 
