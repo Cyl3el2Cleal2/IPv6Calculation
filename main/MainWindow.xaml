@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:main"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="IP v6 Calculation" Height="344" Width="1071" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,140">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="137*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="inputIIP" HorizontalAlignment="Left" Height="28" Margin="10,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="964" Grid.ColumnSpan="2" VerticalContentAlignment="Center" FontSize="14"/>
+        <Button Content="Run
+" HorizontalAlignment="Left" Margin="467,48,0,0" VerticalAlignment="Top" Width="75" Height="28" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button_Click" Grid.Column="1"/>
+        <ComboBox x:Name="comboSubnet" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="1044" Initialized="ComboSubnet_Initialized" Height="27" FontSize="14" Grid.ColumnSpan="2"/>
+        <Canvas Height="196" Margin="10,108,0,-129" VerticalAlignment="Top" HorizontalAlignment="Left" Width="361"/>
+        <Canvas HorizontalAlignment="Left" Height="277" Margin="10,27,0,-129" VerticalAlignment="Top" Width="532" Grid.Column="1">
+            <Label x:Name="tvIPName" Content="IP Range" Width="99" Canvas.Top="197" Height="57" VerticalContentAlignment="Center" Background="#FFB4FF9D" FontSize="16" Canvas.Left="51"/>
+            <Label Content="Result" Height="36" Width="1040" Background="#FFDBFFA7" Canvas.Left="-508" Canvas.Top="89" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Label x:Name="tvIP" Content="IP address" Canvas.Left="51" Width="471" FontSize="14" Canvas.Top="130"/>
+            <Label x:Name="tvIPfull" Content="IP address (full)" Canvas.Left="51" Width="471" Canvas.Top="164" FontSize="14"/>
+            <Label x:Name="tvIPFirst" Content="First =" Canvas.Left="102" Width="411" Canvas.Top="197" FontSize="14"/>
+            <Label x:Name="tvIPTotal" Content="Total IP addresses =" Width="554" Canvas.Top="232" FontSize="14" Canvas.Left="-508"/>
+            <Label x:Name="tvIPLast" Content="Last =" Canvas.Left="102" Width="411" Canvas.Top="231" FontSize="14"/>
+            <Label x:Name="tvNetwork" Content="Network =" Width="490" Canvas.Top="130" Canvas.Left="-508" FontSize="14"/>
+            <Label x:Name="tvNetmask" Content="Netmask =" Width="490" Canvas.Top="164" Canvas.Left="-508" FontSize="14"/>
+            <Label x:Name="tvIPBroadcast" Content="Broadcast =" Width="490" Canvas.Top="198" Canvas.Left="-508" FontSize="14"/>
+        </Canvas>
+        <Label Content="IP v6 Address                " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="270" FontSize="16" HorizontalContentAlignment="Center"/>
+
     </Grid>
 </Window>
